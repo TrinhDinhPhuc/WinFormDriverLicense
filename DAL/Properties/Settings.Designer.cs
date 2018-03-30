@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SatHachBangLaiXe.Properties {
+namespace DAL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,42 +20,6 @@ namespace SatHachBangLaiXe.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string TaiKhoan {
-            get {
-                return ((string)(this["TaiKhoan"]));
-            }
-            set {
-                this["TaiKhoan"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string MatKhau {
-            get {
-                return ((string)(this["MatKhau"]));
-            }
-            set {
-                this["MatKhau"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RememberMe {
-            get {
-                return ((bool)(this["RememberMe"]));
-            }
-            set {
-                this["RememberMe"] = value;
             }
         }
         
