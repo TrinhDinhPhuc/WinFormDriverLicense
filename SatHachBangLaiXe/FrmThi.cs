@@ -185,12 +185,14 @@ namespace SatHachBangLaiXe
             SqlConnection connDB = new SqlConnection(Program.connStr);
             connDB.Open();
             String sqlcmd = "";
+            int k = 1;
             for (int i = 0; i < 30; i++)
             {
 
                 string MsCauHoi = listptl[i].getMsCH();
                 string DapAnofTS = listptl[i].getDapAnTS();
-                sqlcmd = "insert into TTDapAn values ('" + MsCauHoi + "','" + DapAnofTS + "');";
+                sqlcmd = "insert into TTDapAn values ("+k +",'"+ MsCauHoi + "','" + DapAnofTS + "');";
+                k++;
                 SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
                 try { sqlCmd.ExecuteNonQuery(); }
                 catch { }
