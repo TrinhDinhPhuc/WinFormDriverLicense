@@ -1,7 +1,7 @@
 
 
-# Bài TEST Internship tại Vicare
+# Thống kê sát hạch lái xe
 
 <p align="center">
-  <img width="700" height="400" src="https://github.com/TrinhDinhPhuc/WinFormDriverLicense/blob/master/Untitled.png">
+  <img width="800" height="450" src="https://github.com/TrinhDinhPhuc/WinFormDriverLicense/blob/master/Untitled.png">
 </p>   
