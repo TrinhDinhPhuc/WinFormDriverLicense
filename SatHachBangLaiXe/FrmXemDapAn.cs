@@ -27,8 +27,8 @@ namespace SatHachBangLaiXe
             int count1= metroGrid1.Rows.Count;
             int count2 = metroGrid2.Rows.Count;
 
-            lbCauDung.Text = ""+count1;
-            lbCauSai.Text =  ""+count2;
+            lbCauDung.Text = "" +count1;
+            lbCauSai.Text =  "" +count2;
 
         }
 

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.sATHACHBANGLAI1DataSet = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet();
             this.xemDapAnBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.xem_Dap_AnTableAdapter = new SatHachBangLaiXe.SATHACHBANGLAI1DataSetTableAdapters.Xem_Dap_AnTableAdapter();
@@ -42,17 +42,17 @@
             this.xemDapAnBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.xem_Dap_AnTableAdapter1 = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet1TableAdapters.Xem_Dap_AnTableAdapter();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.btnThoatThongKe = new MetroFramework.Controls.MetroButton();
-            this.sATHACHBANGLAI1DataSet4 = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet4();
-            this.xemDapAnSaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.xem_Dap_An_SaiTableAdapter = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet4TableAdapters.Xem_Dap_An_SaiTableAdapter();
-            this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
-            this.metroLink1 = new MetroFramework.Controls.MetroLink();
-            this.metroLink2 = new MetroFramework.Controls.MetroLink();
             this.sTTCauHoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dapAnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xemDapAnSaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sATHACHBANGLAI1DataSet4 = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet4();
+            this.btnThoatThongKe = new MetroFramework.Controls.MetroButton();
+            this.xem_Dap_An_SaiTableAdapter = new SatHachBangLaiXe.SATHACHBANGLAI1DataSet4TableAdapters.Xem_Dap_An_SaiTableAdapter();
+            this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
             this.sTTCauHoiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dapAnDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.metroLink2 = new MetroFramework.Controls.MetroLink();
             this.lbCauDung = new MetroFramework.Controls.MetroLabel();
             this.lbCauSai = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet)).BeginInit();
@@ -60,8 +60,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xemDapAnBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xemDapAnSaiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,47 +103,69 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sTTCauHoiDataGridViewTextBoxColumn,
             this.dapAnDataGridViewTextBoxColumn});
             this.metroGrid1.DataSource = this.xemDapAnSaiBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.metroGrid1.Location = new System.Drawing.Point(23, 81);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(390, 350);
             this.metroGrid1.TabIndex = 1;
             this.metroGrid1.UseCustomBackColor = true;
             this.metroGrid1.UseCustomForeColor = true;
+            // 
+            // sTTCauHoiDataGridViewTextBoxColumn
+            // 
+            this.sTTCauHoiDataGridViewTextBoxColumn.DataPropertyName = "STTCauHoi";
+            this.sTTCauHoiDataGridViewTextBoxColumn.HeaderText = "Câu Hỏi";
+            this.sTTCauHoiDataGridViewTextBoxColumn.Name = "sTTCauHoiDataGridViewTextBoxColumn";
+            // 
+            // dapAnDataGridViewTextBoxColumn
+            // 
+            this.dapAnDataGridViewTextBoxColumn.DataPropertyName = "DapAn";
+            this.dapAnDataGridViewTextBoxColumn.HeaderText = "Đáp Án";
+            this.dapAnDataGridViewTextBoxColumn.Name = "dapAnDataGridViewTextBoxColumn";
+            // 
+            // xemDapAnSaiBindingSource
+            // 
+            this.xemDapAnSaiBindingSource.DataMember = "Xem_Dap_An_Sai";
+            this.xemDapAnSaiBindingSource.DataSource = this.sATHACHBANGLAI1DataSet4;
+            // 
+            // sATHACHBANGLAI1DataSet4
+            // 
+            this.sATHACHBANGLAI1DataSet4.DataSetName = "SATHACHBANGLAI1DataSet4";
+            this.sATHACHBANGLAI1DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnThoatThongKe
             // 
@@ -154,16 +176,6 @@
             this.btnThoatThongKe.Text = "Thoát";
             this.btnThoatThongKe.UseSelectable = true;
             this.btnThoatThongKe.Click += new System.EventHandler(this.btnThoatThongKe_Click);
-            // 
-            // sATHACHBANGLAI1DataSet4
-            // 
-            this.sATHACHBANGLAI1DataSet4.DataSetName = "SATHACHBANGLAI1DataSet4";
-            this.sATHACHBANGLAI1DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // xemDapAnSaiBindingSource
-            // 
-            this.xemDapAnSaiBindingSource.DataMember = "Xem_Dap_An_Sai";
-            this.xemDapAnSaiBindingSource.DataSource = this.sATHACHBANGLAI1DataSet4;
             // 
             // xem_Dap_An_SaiTableAdapter
             // 
@@ -179,83 +191,47 @@
             this.metroGrid2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroGrid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
             this.metroGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.metroGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sTTCauHoiDataGridViewTextBoxColumn1,
             this.dapAnDataGridViewTextBoxColumn1});
             this.metroGrid2.DataSource = this.xemDapAnBindingSource1;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle11;
             this.metroGrid2.EnableHeadersVisualStyles = false;
             this.metroGrid2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.metroGrid2.Location = new System.Drawing.Point(428, 81);
             this.metroGrid2.Name = "metroGrid2";
             this.metroGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.metroGrid2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid2.Size = new System.Drawing.Size(362, 350);
             this.metroGrid2.TabIndex = 1;
             this.metroGrid2.UseCustomBackColor = true;
             this.metroGrid2.UseCustomForeColor = true;
-            // 
-            // metroLink1
-            // 
-            this.metroLink1.FontSize = MetroFramework.MetroLinkSize.Medium;
-            this.metroLink1.ForeColor = System.Drawing.Color.Teal;
-            this.metroLink1.Location = new System.Drawing.Point(52, 52);
-            this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(122, 23);
-            this.metroLink1.TabIndex = 3;
-            this.metroLink1.Text = "Câu Làm Đúng";
-            this.metroLink1.UseCustomForeColor = true;
-            this.metroLink1.UseSelectable = true;
-            // 
-            // metroLink2
-            // 
-            this.metroLink2.FontSize = MetroFramework.MetroLinkSize.Medium;
-            this.metroLink2.ForeColor = System.Drawing.Color.Teal;
-            this.metroLink2.Location = new System.Drawing.Point(447, 52);
-            this.metroLink2.Name = "metroLink2";
-            this.metroLink2.Size = new System.Drawing.Size(122, 23);
-            this.metroLink2.TabIndex = 3;
-            this.metroLink2.Text = "Câu Làm Sai";
-            this.metroLink2.UseCustomForeColor = true;
-            this.metroLink2.UseSelectable = true;
-            // 
-            // sTTCauHoiDataGridViewTextBoxColumn
-            // 
-            this.sTTCauHoiDataGridViewTextBoxColumn.DataPropertyName = "STTCauHoi";
-            this.sTTCauHoiDataGridViewTextBoxColumn.HeaderText = "Câu Hỏi";
-            this.sTTCauHoiDataGridViewTextBoxColumn.Name = "sTTCauHoiDataGridViewTextBoxColumn";
-            // 
-            // dapAnDataGridViewTextBoxColumn
-            // 
-            this.dapAnDataGridViewTextBoxColumn.DataPropertyName = "DapAn";
-            this.dapAnDataGridViewTextBoxColumn.HeaderText = "Đáp Án";
-            this.dapAnDataGridViewTextBoxColumn.Name = "dapAnDataGridViewTextBoxColumn";
             // 
             // sTTCauHoiDataGridViewTextBoxColumn1
             // 
@@ -269,10 +245,34 @@
             this.dapAnDataGridViewTextBoxColumn1.HeaderText = "Đáp Án";
             this.dapAnDataGridViewTextBoxColumn1.Name = "dapAnDataGridViewTextBoxColumn1";
             // 
+            // metroLink1
+            // 
+            this.metroLink1.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.metroLink1.ForeColor = System.Drawing.Color.Teal;
+            this.metroLink1.Location = new System.Drawing.Point(440, 52);
+            this.metroLink1.Name = "metroLink1";
+            this.metroLink1.Size = new System.Drawing.Size(122, 23);
+            this.metroLink1.TabIndex = 3;
+            this.metroLink1.Text = "Câu Làm Đúng";
+            this.metroLink1.UseCustomForeColor = true;
+            this.metroLink1.UseSelectable = true;
+            // 
+            // metroLink2
+            // 
+            this.metroLink2.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.metroLink2.ForeColor = System.Drawing.Color.Teal;
+            this.metroLink2.Location = new System.Drawing.Point(39, 48);
+            this.metroLink2.Name = "metroLink2";
+            this.metroLink2.Size = new System.Drawing.Size(122, 23);
+            this.metroLink2.TabIndex = 3;
+            this.metroLink2.Text = "Câu Làm Sai";
+            this.metroLink2.UseCustomForeColor = true;
+            this.metroLink2.UseSelectable = true;
+            // 
             // lbCauDung
             // 
             this.lbCauDung.AutoSize = true;
-            this.lbCauDung.Location = new System.Drawing.Point(180, 52);
+            this.lbCauDung.Location = new System.Drawing.Point(157, 48);
             this.lbCauDung.Name = "lbCauDung";
             this.lbCauDung.Size = new System.Drawing.Size(45, 19);
             this.lbCauDung.TabIndex = 4;
@@ -281,7 +281,7 @@
             // lbCauSai
             // 
             this.lbCauSai.AutoSize = true;
-            this.lbCauSai.Location = new System.Drawing.Point(575, 52);
+            this.lbCauSai.Location = new System.Drawing.Point(556, 52);
             this.lbCauSai.Name = "lbCauSai";
             this.lbCauSai.Size = new System.Drawing.Size(45, 19);
             this.lbCauSai.TabIndex = 4;
@@ -309,8 +309,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xemDapAnBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xemDapAnSaiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

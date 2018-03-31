@@ -169,7 +169,7 @@ namespace SatHachBangLaiXe
             // panel2
             // 
             this.panel2.Controls.Add(this.pn_DeThi);
-            this.panel2.Location = new System.Drawing.Point(975, 44);
+            this.panel2.Location = new System.Drawing.Point(975, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 720);
             this.panel2.TabIndex = 3;
