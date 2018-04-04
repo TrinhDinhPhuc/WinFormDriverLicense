@@ -24,6 +24,8 @@ namespace SatHachBangLaiXe
 
         private int CauDangLam = 0;
         public int CauDaLam { get; set; }
+
+
         private void Anserkey(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -106,8 +108,27 @@ namespace SatHachBangLaiXe
             this.dethi = dethi.getDethi();
         }
 
+        public string QuestionID;
+
+        private void Gbox_MouseClick(object sender, MouseEventArgs e)
+        {
+            var ctrl = sender as Control;
+            int questionID = (int)(sender as Control).Tag;
+            loadcauhoi(this.CauDangLam);
+        }
+        private void QuestionGroupBox_Click(object sender, EventArgs e)
+        {
+            var questionID = ((FrmThi)sender).QuestionID;
+            loadcauhoi(this.CauDangLam);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+        }
         private void FrmThi_Load(object sender, EventArgs e)
         {
+            //Cursor.Hide();
             droptable();
             this.CauDaLam = 0;
             if (dethi == null) setdethi();
@@ -120,6 +141,10 @@ namespace SatHachBangLaiXe
                 String myValue = row["SoDA"].ToString();
                 String msch = row["MaCH"].ToString();
                 ptl = new FrmPhieuTraLoi();
+
+                //ptl.getGroupBox().Click += new System.EventHandler(this.QuestionGroupBox_Click);
+                //ptl.getGroupBox().MouseClick += Gbox_MouseClick;
+
                 pn_DeThi.Controls.Add(ptl.gbx("cau" + (i + 1).ToString(), int.Parse(myValue), (i + 1).ToString(), msch));
                 listptl.Add(ptl);
                 i++;
@@ -134,6 +159,7 @@ namespace SatHachBangLaiXe
             lbSatHachBangLai.Text = "";
             timer1.Start();
             this.timer2.Start();
+
         }
 
         private void metroButton2_Click(object sender, EventArgs e)

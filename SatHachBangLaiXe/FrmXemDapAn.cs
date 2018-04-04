@@ -24,8 +24,8 @@ namespace SatHachBangLaiXe
             // TODO: This line of code loads data into the 'sATHACHBANGLAI1DataSet1.Xem_Dap_An' table. You can move, or remove it, as needed.
             this.xem_Dap_AnTableAdapter1.Fill(this.sATHACHBANGLAI1DataSet1.Xem_Dap_An);
             // TODO: This line of code loads data into the 'sATHACHBANGLAI1DataSet.Xem_Dap_An' table. You can move, or remove it, as needed.
-            int count1= metroGrid1.Rows.Count;
-            int count2 = metroGrid2.Rows.Count;
+            int count1= metroGrid1.Rows.Count -1;
+            int count2 = metroGrid2.Rows.Count -1;
 
             lbCauDung.Text = "" +count1;
             lbCauSai.Text =  "" +count2;

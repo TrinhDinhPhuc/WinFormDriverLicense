@@ -9,11 +9,6 @@ namespace DAL
 {
     public class ExecPrint
     {
-        //public static string DapAn(string msch)
-        //{
-        //    ModelTableAdapters.CauHoiTableAdapter adap = new ModelTableAdapters.CauHoiTableAdapter();
-        //    return adap.ScalarQuery(msch).ToString();
 
-        //}
     }
 }

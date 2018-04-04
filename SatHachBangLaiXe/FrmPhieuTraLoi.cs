@@ -39,6 +39,7 @@ namespace SatHachBangLaiXe
                 gb.BackColor = Color.Turquoise;
             }
         }
+       
         public GroupBox gbx(String name, int s, string i, string msch)
         {
             this.Name = int.Parse(i);
@@ -66,7 +67,6 @@ namespace SatHachBangLaiXe
                 gb.Controls.Add(cb3);
                 gb.Controls.Add(cb4);
             }
-
 
             gb.Location = new System.Drawing.Point(219, 44);
             gb.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -213,6 +213,10 @@ namespace SatHachBangLaiXe
         {
             return cb1;
         }
+        public GroupBox getGroupBox()
+        {
+            return gb;
+        }
         public CheckBox getcb2()
         {
             return cb2;
@@ -234,6 +238,7 @@ namespace SatHachBangLaiXe
         CheckBox cb2 = new CheckBox();
         CheckBox cb3 = new CheckBox();  
         CheckBox cb4 = new CheckBox();
+        
         public int Name { get; set; }
         int sda;
         String MsCauHoi;
