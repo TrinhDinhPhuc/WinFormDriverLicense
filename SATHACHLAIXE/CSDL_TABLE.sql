@@ -1,4 +1,5 @@
-﻿USE SATHACHLAIXE
+﻿CREATE DATABASE SATHACHLAIXE
+USE SATHACHLAIXE
 GO
 -- Tạo bảng nhân viên
 create table TTNhanVien(
@@ -10,6 +11,11 @@ DiaChi nvarchar(30) not null,
 SDT nvarchar(11) not null,
 TruyCapCuoi datetime
 )
+
+alter table TTNhanVien
+add AnhNV varchar(250)
+
+
 -- Tạo bảng thông tin Kỳ Thi
 Create table TTKyThi(
 KyThi varchar(10) primary key not null,

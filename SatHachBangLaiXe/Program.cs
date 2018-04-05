@@ -11,7 +11,7 @@ namespace SatHachBangLaiXe
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        public static string connStr = @"Data Source=PHUCCOI\PHUCCOI;Initial Catalog=SATHACHBANGLAI1;user=sa;pwd=123456";
+        public static string connStr = @"Data Source=PHUCCOI\PHUCCOI;Initial Catalog=SATHACHLAIXE;user=sa;pwd=123456";
         public static string MBT;
         public static string SBD;
         static void Main()
@@ -19,7 +19,7 @@ namespace SatHachBangLaiXe
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new FrmNhanVien());
         }
     }
 }
