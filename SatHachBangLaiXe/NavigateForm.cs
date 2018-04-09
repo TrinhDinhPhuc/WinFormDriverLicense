@@ -19,7 +19,7 @@ namespace SatHachBangLaiXe
 
         private void NavigateForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace SatHachBangLaiXe
 
         private void btnMetroInfoAccount_Click(object sender, EventArgs e)
         {
-            using (Form1 frm = new Form1())//Open main form and hide login form
+            using (FrmThiSinh frm = new FrmThiSinh())//Open main form and hide login form
             {
                 frm.ShowDialog();
             }
@@ -37,8 +37,9 @@ namespace SatHachBangLaiXe
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
-            using (FrmThi frm = new FrmThi())//Open main form and hide login form
+            using (LogInThiSinh frm = new LogInThiSinh())//Open main form and hide login form
             {
+                this.Hide();
                 frm.ShowDialog();
             }
         }
@@ -49,6 +50,45 @@ namespace SatHachBangLaiXe
             {
                 frm.ShowDialog();
             }
+        }
+
+        private void metroTile15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            using (FrmThiSinh frm = new FrmThiSinh())
+            {
+                frm.ShowDialog();
+            }
+
+        }
+
+        private void metroTile13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

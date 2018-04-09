@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -9,40 +10,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dapper;
 using DTO;
+
 namespace SatHachBangLaiXe
 {
-    public partial class Login : MetroFramework.Forms.MetroForm
+    public partial class LogInThiSinh : MetroFramework.Forms.MetroForm
     {
-        public Login()
+        public LogInThiSinh()
         {
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void LogInThiSinh_Load(object sender, EventArgs e)
         {
-            
             //Khởi tạo giao diện metro
             this.StyleManager = metroStyleManager1;
             metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroStyleManager1.Style = MetroFramework.MetroColorStyle.Green;
-            if (Properties.Settings.Default.RememberMe)//True
-            {
-                //đặt giá trị username & mật khẩu
-                txtUsername.Text = Properties.Settings.Default.TaiKhoan;
-                txtPassword.Text = Properties.Settings.Default.MatKhau;
-                
-            }
+
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             //Kiểm tra null or empty
-            if (string.IsNullOrEmpty(txtUsername.Text))
+            if (string.IsNullOrEmpty(txtTenTaiKhoan.Text))
             {
                 MetroFramework.MetroMessageBox.Show(this, "Vui lòng điền tên đăng nhập", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsername.Focus();
+                txtTenTaiKhoan.Focus();
                 return;
             }
             try
@@ -52,17 +46,18 @@ namespace SatHachBangLaiXe
                     if (db.State == ConnectionState.Closed)
                         db.Open();
                     //Excute sql query, then map data return from sql to User class
-                    User obj = db.Query<User>($"select * from TTNhanVien where TaiKhoan ='{txtUsername.Text}'", commandType: CommandType.Text).SingleOrDefault();
+                    UserThiSinh obj = db.Query<UserThiSinh>($"select * from TTHocVien where SoCMND ='{txtTenTaiKhoan.Text}'", commandType: CommandType.Text).SingleOrDefault();
+                    string mahocvien = obj.MaHV;
+                    Properties.Settings.Default.mahocvien = mahocvien;
                     if (obj != null)
                     {
-                        if (obj.MatKhau == txtPassword.Text)//True
+                        if (obj.MaHV == txtMatKhau.Text)//True
                         {
-                            using (NavigateForm frm = new NavigateForm())//Open main form and hide login form
+                            //Console.WriteLine("Gia tri cua bien do la:  " + Properties.Settings.Default.mahocvien);
+                            using (FrmThi frm = new FrmThi())//Open main form and hide login form
                             {
                                 this.Hide();
                                 frm.ShowDialog();
-
-
                             }
                         }
                         else
@@ -76,22 +71,8 @@ namespace SatHachBangLaiXe
             {
                 MetroFramework.MetroMessageBox.Show(this, ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
-        private void checkBoxDangNhap_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxDangNhap.Checked)//Set value to user settings
-            {
-                Properties.Settings.Default.TaiKhoan = txtUsername.Text;
-                Properties.Settings.Default.MatKhau = txtPassword.Text;
-            }
-            else
-            {
-                Properties.Settings.Default.TaiKhoan = null;
-                Properties.Settings.Default.MatKhau = null;
-            }
-            Properties.Settings.Default.RememberMe = checkBoxDangNhap.Checked;
-            Properties.Settings.Default.Save();//Save data to user settings
-        }
     }
 }

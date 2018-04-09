@@ -1,4 +1,5 @@
-﻿namespace SatHachBangLaiXe
+﻿
+namespace SatHachBangLaiXe
 {
     partial class Login
     {

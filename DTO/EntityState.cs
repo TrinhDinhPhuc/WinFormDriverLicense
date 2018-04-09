@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace DTO
 {
-    public class ExecPrint
+    public enum EntityState
     {
-
+        Unchanged,
+        Added,
+        Changed,
+        Deleted
     }
 }

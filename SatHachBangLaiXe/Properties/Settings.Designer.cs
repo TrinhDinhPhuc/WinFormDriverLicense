@@ -62,11 +62,23 @@ namespace SatHachBangLaiXe.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHUCCOI\\PHUCCOI;Initial Catalog=SATHACHBANGLAI1;Integrated Security=T" +
-            "rue")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHUCCOI\\PHUCCOI;Initial Catalog=SATHACHLAIXE;Integrated Security=True" +
+            "")]
         public string SATHACHBANGLAI1ConnectionString {
             get {
                 return ((string)(this["SATHACHBANGLAI1ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string mahocvien {
+            get {
+                return ((string)(this["mahocvien"]));
+            }
+            set {
+                this["mahocvien"] = value;
             }
         }
     }

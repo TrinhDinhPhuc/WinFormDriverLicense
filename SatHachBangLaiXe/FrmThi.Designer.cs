@@ -45,7 +45,6 @@ namespace SatHachBangLaiXe
             this.pn_DeThi = new System.Windows.Forms.FlowLayoutPanel();
             this.metroLink1 = new MetroFramework.Controls.MetroLink();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.lbMaDe = new MetroFramework.Controls.MetroLabel();
             this.lbmade1 = new MetroFramework.Controls.MetroLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -91,7 +90,7 @@ namespace SatHachBangLaiXe
             this.btnThoat1.Location = new System.Drawing.Point(645, 145);
             this.btnThoat1.Name = "btnThoat1";
             this.btnThoat1.Size = new System.Drawing.Size(254, 36);
-            this.btnThoat1.TabIndex = 334;
+            this.btnThoat1.TabIndex = 500;
             this.btnThoat1.Text = "THOÁT";
             this.btnThoat1.Click += new System.EventHandler(this.btnThoat1_Click);
             // 
@@ -204,21 +203,6 @@ namespace SatHachBangLaiXe
             this.panel3.Size = new System.Drawing.Size(944, 26);
             this.panel3.TabIndex = 4;
             // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(790, 32);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(59, 19);
-            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel3.TabIndex = 7;
-            this.metroLabel3.Text = "MÃ ĐỀ: ";
-            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel3.UseCustomBackColor = true;
-            this.metroLabel3.UseCustomForeColor = true;
-            this.metroLabel3.UseStyleColors = true;
-            // 
             // lbMaDe
             // 
             this.lbMaDe.AutoSize = true;
@@ -288,7 +272,6 @@ namespace SatHachBangLaiXe
             this.Controls.Add(this.lbCauHoi);
             this.Controls.Add(this.lbMaDe);
             this.Controls.Add(this.lbmade1);
-            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroProgressBar1);
@@ -326,7 +309,6 @@ namespace SatHachBangLaiXe
         private MetroFramework.Controls.MetroLink metroLink1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel pn_DeThi;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel lbMaDe;
         private MetroFramework.Controls.MetroLabel lbmade1;
         private System.Windows.Forms.Timer timer1;

@@ -3,17 +3,16 @@ USE SATHACHLAIXE
 GO
 -- Tạo bảng nhân viên
 create table TTNhanVien(
-TaiKhoan varchar(20) primary key not null,
+TaiKhoan varchar(20)  primary key not null ,
 MatKhau varchar(20) not null,
 HoNV nvarchar(30) not null,
 TenNV nvarchar(30) not null,
 DiaChi nvarchar(30) not null,
 SDT nvarchar(11) not null,
-TruyCapCuoi datetime
+TruyCapCuoi datetime,
+AnhNV varchar(250)
 )
 
-alter table TTNhanVien
-add AnhNV varchar(250)
 
 
 -- Tạo bảng thông tin Kỳ Thi

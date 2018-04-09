@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace SatHachBangLaiXe
 {
-    public enum EntityState
+    public class UserThiSinh
     {
-        Unchanged,
-        Added,
-        Changed,
-        Deleted
+        public string SoCMND { get; set; }
+        public string MaHV { get; set; }
+        public string KyThi { get; set; }
     }
 }

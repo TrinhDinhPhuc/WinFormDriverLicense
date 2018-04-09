@@ -128,7 +128,6 @@ namespace SatHachBangLaiXe
         }
         private void FrmThi_Load(object sender, EventArgs e)
         {
-            //Cursor.Hide();
             droptable();
             this.CauDaLam = 0;
             if (dethi == null) setdethi();
@@ -141,10 +140,6 @@ namespace SatHachBangLaiXe
                 String myValue = row["SoDA"].ToString();
                 String msch = row["MaCH"].ToString();
                 ptl = new FrmPhieuTraLoi();
-
-                //ptl.getGroupBox().Click += new System.EventHandler(this.QuestionGroupBox_Click);
-                //ptl.getGroupBox().MouseClick += Gbox_MouseClick;
-
                 pn_DeThi.Controls.Add(ptl.gbx("cau" + (i + 1).ToString(), int.Parse(myValue), (i + 1).ToString(), msch));
                 listptl.Add(ptl);
                 i++;
@@ -152,8 +147,6 @@ namespace SatHachBangLaiXe
             loadcauhoi(this.CauDangLam);
             listptl[CauDangLam].setBackColorCDL();
             
-            Random r = new Random();
-            lbmade1.Text = r.Next(1, 4).ToString();
             txt = lbSatHachBangLai.Text;
             len = txt.Length;
             lbSatHachBangLai.Text = "";
@@ -214,7 +207,6 @@ namespace SatHachBangLaiXe
             int k = 1;
             for (int i = 0; i < 30; i++)
             {
-
                 string MsCauHoi = listptl[i].getMsCH();
                 string DapAnofTS = listptl[i].getDapAnTS();
                 sqlcmd = "insert into TTDapAn values ("+k +",'"+ MsCauHoi + "','" + DapAnofTS + "');";
@@ -222,7 +214,6 @@ namespace SatHachBangLaiXe
                 SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
                 try { sqlCmd.ExecuteNonQuery(); }
                 catch { }
-
             }
             connDB.Close();
         }
