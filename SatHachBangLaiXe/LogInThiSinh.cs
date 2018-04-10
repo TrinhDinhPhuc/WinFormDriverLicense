@@ -53,7 +53,8 @@ namespace SatHachBangLaiXe
                     {
                         if (obj.MaHV == txtMatKhau.Text)//True
                         {
-                            //Console.WriteLine("Gia tri cua bien do la:  " + Properties.Settings.Default.mahocvien);
+                            Console.WriteLine("\n\n Gia tri cua mahocvien la:  " + Properties.Settings.Default.mahocvien);
+
                             using (FrmThi frm = new FrmThi())//Open main form and hide login form
                             {
                                 this.Hide();

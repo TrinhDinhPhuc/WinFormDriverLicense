@@ -170,7 +170,7 @@ namespace SatHachBangLaiXe
             this.panel2.Controls.Add(this.pn_DeThi);
             this.panel2.Location = new System.Drawing.Point(975, 21);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 720);
+            this.panel2.Size = new System.Drawing.Size(274, 729);
             this.panel2.TabIndex = 3;
             // 
             // pn_DeThi
@@ -178,7 +178,7 @@ namespace SatHachBangLaiXe
             this.pn_DeThi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_DeThi.Location = new System.Drawing.Point(17, 11);
             this.pn_DeThi.Name = "pn_DeThi";
-            this.pn_DeThi.Size = new System.Drawing.Size(247, 706);
+            this.pn_DeThi.Size = new System.Drawing.Size(250, 709);
             this.pn_DeThi.TabIndex = 1;
             this.pn_DeThi.Click += new System.EventHandler(this.pn_DeThi_Click);
             // 

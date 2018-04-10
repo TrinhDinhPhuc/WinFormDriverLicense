@@ -19,10 +19,14 @@ namespace SatHachBangLaiXe
 
         private void FrmXemDapAn_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'sATHACHLAIXEDataSet.Xem_Dap_An_Dung' table. You can move, or remove it, as needed.
+            this.xem_Dap_An_DungTableAdapter.Fill(this.sATHACHLAIXEDataSet.Xem_Dap_An_Dung);
+            // TODO: This line of code loads data into the 'dAPANSAIDataSet.Xem_Dap_An_Sai' table. You can move, or remove it, as needed.
+            this.xem_Dap_An_SaiTableAdapter1.Fill(this.dAPANSAIDataSet.Xem_Dap_An_Sai);
             // TODO: This line of code loads data into the 'sATHACHBANGLAI1DataSet4.Xem_Dap_An_Sai' table. You can move, or remove it, as needed.
-            this.xem_Dap_An_SaiTableAdapter.Fill(this.sATHACHBANGLAI1DataSet4.Xem_Dap_An_Sai);
+            //this.xem_Dap_An_SaiTableAdapter.Fill(this.sATHACHBANGLAI1DataSet4.Xem_Dap_An_Sai);
             // TODO: This line of code loads data into the 'sATHACHBANGLAI1DataSet1.Xem_Dap_An' table. You can move, or remove it, as needed.
-            this.xem_Dap_AnTableAdapter1.Fill(this.sATHACHBANGLAI1DataSet1.Xem_Dap_An);
+            //this.xem_Dap_AnTableAdapter1.Fill(this.sATHACHBANGLAI1DataSet1.Xem_Dap_An);
             // TODO: This line of code loads data into the 'sATHACHBANGLAI1DataSet.Xem_Dap_An' table. You can move, or remove it, as needed.
             int count1= metroGrid1.Rows.Count -1;
             int count2 = metroGrid2.Rows.Count -1;

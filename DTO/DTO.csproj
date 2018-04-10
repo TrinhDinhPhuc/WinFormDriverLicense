@@ -46,6 +46,7 @@
     <Compile Include="NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HocVien.cs" />
+    <Compile Include="TTDeThi.cs" />
     <Compile Include="UserThiSinh.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

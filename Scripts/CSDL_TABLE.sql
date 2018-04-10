@@ -13,8 +13,6 @@ TruyCapCuoi datetime,
 AnhNV varchar(250)
 )
 
-
-
 -- Tạo bảng thông tin Kỳ Thi
 Create table TTKyThi(
 KyThi varchar(10) primary key not null,

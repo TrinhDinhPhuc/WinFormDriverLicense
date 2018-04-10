@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Dapper;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -209,23 +212,43 @@ namespace SatHachBangLaiXe
             {
                 string MsCauHoi = listptl[i].getMsCH();
                 string DapAnofTS = listptl[i].getDapAnTS();
-                sqlcmd = "insert into TTDapAn values ("+k +",'"+ MsCauHoi + "','" + DapAnofTS + "');";
+                sqlcmd = "insert into DAPAN values (" + k +",'"+ MsCauHoi + "','" + DapAnofTS + "');";
                 k++;
                 SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
                 try { sqlCmd.ExecuteNonQuery(); }
                 catch { }
             }
             connDB.Close();
+            themTTBAITHI();
+
         }
         private void droptable()
         {
             SqlConnection connDB = new SqlConnection(Program.connStr);
             connDB.Open();
             String sqlcmd = "";
-            sqlcmd = "delete from TTDapAn ";
+            sqlcmd = " delete from DAPAN ";
             SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
             try { sqlCmd.ExecuteNonQuery(); }
             catch { }
+            connDB.Close();
+        }
+        private void themTTBAITHI()
+        {
+
+            SqlConnection connDB = new SqlConnection(Program.connStr);
+            connDB.Open();
+            String sqlcmd = "";
+            sqlcmd = "Insert into TTBaiThi (STT, MaDeThi ,MaHV ,DapAnTS) SELECT STT , '" + Properties.Settings.Default.madethi + "' , '" + Properties.Settings.Default.mahocvien + "' , DapAnofTS FROM DAPAN ";
+            SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
+            try
+            {
+                sqlCmd.ExecuteNonQuery();
+                Console.WriteLine("Gia tri cuamadethi la:  " + Properties.Settings.Default.madethi);
+
+            }
+            catch
+            { }
             connDB.Close();
         }
         private void FrmThi_KeyUp(object sender, KeyEventArgs e)
@@ -267,11 +290,11 @@ namespace SatHachBangLaiXe
                 frm.ShowDialog();
             }
         }
-        private int exec()
-        {
-            String query = "print dbo.Check_Dap_An()";
-            return DAL.ConnectDB.ExecuteNonQuery(query);
-        }
+        //private int exec()
+        //{
+        //    String query = "print dbo.Check_Dap_An()";
+        //    return DAL.ConnectDB.ExecuteNonQuery(query);
+        //}
         private void btnThoat1_Click(object sender, EventArgs e)
         {
             Application.Exit();

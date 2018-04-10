@@ -41,7 +41,7 @@ namespace DAL
                     db.Open();
                 DynamicParameters p = new DynamicParameters();
                 //p.Add("@MaHV", dbType: DbType.String, direction:ParameterDirection.Output,size:20);
-                p.AddDynamicParams(new {MaHV=' ',  TenHV = obj.TenHV, HoNV = obj.HoHV, NgaySinh = obj.NgaySinh, SoCMND = obj.SoCMND, NgayCapCMND = obj.NgayCapCMND,SDT=obj.SDT,DiaChi=obj.DiaChi, DiemTH=obj.DiemTH });
+                p.AddDynamicParams(new { MaHV ="", TenHV= obj.TenHV , HoHV = obj.HoHV , NgaySinh = obj.NgaySinh , SoCMND = obj.SoCMND , NgayCapCMND=obj.NgayCapCMND, SDT = obj.SDT , DiaChi =obj.DiaChi , DiemTH = obj.DiemTH , NgayDK = "", KyThi = ""});
                 db.Execute("sp_HocVien_Insert", p, commandType: CommandType.StoredProcedure);
                 return p.Get<string>("@MaHV");
             }
@@ -53,7 +53,7 @@ namespace DAL
             { 
                 if (db.State == ConnectionState.Closed)
                     db.Open();
-                    int result =db.Execute("sp_HocVien_Update", new {TenHV = obj.TenHV, HoNV = obj.HoHV, NgaySinh = obj.NgaySinh, SoCMND = obj.SoCMND, NgayCapCMND = obj.NgayCapCMND, SDT = obj.SDT, DiaChi = obj.DiaChi, DiemTH = obj.DiemTH }, commandType: CommandType.StoredProcedure);
+                    int result =db.Execute("sp_HocVien_Update", new { MaHV= obj.MaHV, TenHV = obj.TenHV, HoHV = obj.HoHV, NgaySinh = obj.NgaySinh, SoCMND = obj.SoCMND, NgayCapCMND = obj.NgayCapCMND, SDT = obj.SDT, DiaChi = obj.DiaChi, DiemTH = obj.DiemTH }, commandType: CommandType.StoredProcedure);
                 return result != 0;
             }
             

@@ -81,5 +81,17 @@ namespace SatHachBangLaiXe.Properties {
                 this["mahocvien"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string madethi {
+            get {
+                return ((string)(this["madethi"]));
+            }
+            set {
+                this["madethi"] = value;
+            }
+        }
     }
 }

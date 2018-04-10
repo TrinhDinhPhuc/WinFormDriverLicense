@@ -11,9 +11,9 @@ namespace DTO
         public string MaHV { get; set; }
         public string TenHV { get; set; }
         public string HoHV { get; set; }
-        public string NgaySinh { get; set; }
+        public DateTime NgaySinh { get; set; }
         public string SoCMND { get; set; }
-        public string NgayCapCMND { get; set; }
+        public DateTime NgayCapCMND { get; set; }
         public string SDT { get; set; }
         public string DiaChi { get; set; }
         public int  DiemTH { get; set; }

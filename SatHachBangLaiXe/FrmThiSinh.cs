@@ -130,7 +130,9 @@ namespace SatHachBangLaiXe
                 obj = HocVienService.Save(obj, objState);
                 metroGrid1.Refresh();
                 objState = EntityState.Unchanged;
-            }
+                MetroFramework.MetroMessageBox.Show(this, "Đã Cập Nhật Thành Công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
 
             }
             catch (Exception ex)

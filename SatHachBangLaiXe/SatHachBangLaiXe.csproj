@@ -73,6 +73,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAPANSAIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAPANSAIDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DeThi.cs" />
     <Compile Include="FrmMainMenu.cs">
       <SubType>Form</SubType>
@@ -159,6 +164,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SATHACHBANGLAI1DataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SATHACHLAIXEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SATHACHLAIXEDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +206,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DAPANSAIDataSet.xsc">
+      <DependentUpon>DAPANSAIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DAPANSAIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAPANSAIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DAPANSAIDataSet.xss">
+      <DependentUpon>DAPANSAIDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Candidate.datasource" />
     <None Include="Properties\DataSources\DTO.HocVien.datasource" />
@@ -266,6 +287,17 @@
     </None>
     <None Include="SATHACHBANGLAI1DataSet4.xss">
       <DependentUpon>SATHACHBANGLAI1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet.xsc">
+      <DependentUpon>SATHACHLAIXEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SATHACHLAIXEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SATHACHLAIXEDataSet.xss">
+      <DependentUpon>SATHACHLAIXEDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
