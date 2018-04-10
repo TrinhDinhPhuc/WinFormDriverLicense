@@ -121,3 +121,40 @@ as
 update TTHOCVIEN set TenHV=@TenHV,HoHV=@HoHV,NgaySinh=@NgaySinh,SoCMND=@SoCMND,NgayCapCMND=@NgayCapCMND,SDT=@SDT,DiaChi=@DiaChi,DiemTH=@DiemTH
 where MaHV=@MaHV
 exec sp_HocVien_Update 'KT01004','LALA1','LALA1','1996-10-15','256858748','2012-05-10','09858748759','Ba Vi',0
+
+
+-------------------------------------------------------------------------------------
+alter proc	
+(
+@KyThi varchar(10) output,
+@NgayBatDauDK varchar(30),
+@TaiKhoan varchar(20)
+)
+AS
+begin
+declare @ngaybatdau varchar(10)
+select @ngaybatdau = @KyThi from dbo.TTKyThi
+begin
+begin tran;
+if NOT EXISTS (SELECT NgayBatDauDK FROM TTKyThi WHERE @NgayBatDauDK between NgayBatDauDK and dateadd(DAY,30,NgayBatDauDK) ) 
+begin
+insert into TTKyThi(KyThi, NgayBatDauDK ,TaiKhoan)
+values (@KyThi,@NgayBatDauDK,@TaiKhoan)
+end
+commit tran;
+end;
+end;
+go
+
+-------------------------------------------------------------------------------------
+
+create procedure sp_KyThi_Update
+(
+@KyThi varchar(10) output,
+@NgayBatDauDK varchar(30),
+@TaiKhoan varchar(20)
+)
+as
+update TTKyThi set NgayBatDauDK=@NgayBatDauDK,TaiKhoan=@TaiKhoan
+where KyThi=@KyThi
+exec sp_HocVien_Update 

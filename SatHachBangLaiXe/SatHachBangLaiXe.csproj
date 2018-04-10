@@ -85,6 +85,18 @@
     <Compile Include="FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOnTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOnTap.Designer.cs">
+      <DependentUpon>FrmOnTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaoKiThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaoKiThi.Designer.cs">
+      <DependentUpon>FrmTaoKiThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThiSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,12 @@
     </Compile>
     <Compile Include="FrmXemDapAn.Designer.cs">
       <DependentUpon>FrmXemDapAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemDapAnOnTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemDapAnOnTap.Designer.cs">
+      <DependentUpon>FrmXemDapAnOnTap.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -134,6 +152,7 @@
     <Compile Include="NavigateFormQuanLy.Designer.cs">
       <DependentUpon>NavigateFormQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnTap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionGroupBox.cs">
@@ -169,8 +188,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SATHACHLAIXEDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SATHACHLAIXEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SATHACHLAIXEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SATHACHLAIXEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SATHACHLAIXEDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOnTap.resx">
+      <DependentUpon>FrmOnTap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTaoKiThi.resx">
+      <DependentUpon>FrmTaoKiThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThiSinh.resx">
       <DependentUpon>FrmThiSinh.cs</DependentUpon>
@@ -183,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXemDapAn.resx">
       <DependentUpon>FrmXemDapAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemDapAnOnTap.resx">
+      <DependentUpon>FrmXemDapAnOnTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -221,6 +259,7 @@
     <None Include="Properties\DataSources\Candidate.datasource" />
     <None Include="Properties\DataSources\DTO.HocVien.datasource" />
     <None Include="Properties\DataSources\DTO.NhanVien.datasource" />
+    <None Include="Properties\DataSources\DTO.TTKyThi.datasource" />
     <None Include="Properties\DataSources\Form1.datasource" />
     <None Include="Properties\DataSources\MENU.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
@@ -298,6 +337,28 @@
     </None>
     <None Include="SATHACHLAIXEDataSet.xss">
       <DependentUpon>SATHACHLAIXEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet1.xsc">
+      <DependentUpon>SATHACHLAIXEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SATHACHLAIXEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SATHACHLAIXEDataSet1.xss">
+      <DependentUpon>SATHACHLAIXEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet2.xsc">
+      <DependentUpon>SATHACHLAIXEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SATHACHLAIXEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SATHACHLAIXEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SATHACHLAIXEDataSet2.xss">
+      <DependentUpon>SATHACHLAIXEDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

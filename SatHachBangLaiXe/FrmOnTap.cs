@@ -1,9 +1,6 @@
-﻿using Dapper;
-using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,21 +11,17 @@ using System.Windows.Forms;
 
 namespace SatHachBangLaiXe
 {
-    public partial class FrmThi : MetroFramework.Forms.MetroForm
+    public partial class FrmOnTap : MetroFramework.Forms.MetroForm
     {
-
         List<FrmPhieuTraLoi> listptl = new List<FrmPhieuTraLoi>();
 
-        public FrmThi()
+        public FrmOnTap()
         {
             InitializeComponent();
         }
 
-
         private int CauDangLam = 0;
         public int CauDaLam { get; set; }
-
-
         private void Anserkey(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -38,14 +31,7 @@ namespace SatHachBangLaiXe
                 case Keys.NumPad3: { if (listptl[CauDangLam].getsda() >= 3) listptl[CauDangLam].daocheck(listptl[CauDangLam].getcb3()); break; }
                 case Keys.NumPad4: { if (listptl[CauDangLam].getsda() >= 4) listptl[CauDangLam].daocheck(listptl[CauDangLam].getcb4()); break; }
             }
-
         }
-
-        private void btnThoatThi_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void keyup11(object sender, KeyEventArgs e)
         {
             //btn_xemdapan.Text = "Xem đáp án";
@@ -73,30 +59,18 @@ namespace SatHachBangLaiXe
                             listptl[CauDangLam].setBackColorCDL();
                             loadcauhoi(this.CauDangLam);
                             lbCauHoi.Text = "Câu hỏi: " + (CauDangLam + 1);
-
                         }
                         break;
                     }
-
             }
 
-
         }
-        private void btnFinished_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmThi_ParentChanged(object sender, EventArgs e)
-        {
-
-        }
-        private DataTable dethi;
+        private DataTable ontap;
         private void loadcauhoi(int i)
         {
             if (i <= 29)
             {
-                DataRow row = dethi.Rows[i];
+                DataRow row = ontap.Rows[i];
                 String myValue = row["MaCH"].ToString();
                 myValue = myValue.Trim();
                 string filepath = @"C:\Users\USER\Documents\Visual Studio 2015\Projects\SatHachBangLaiXe\SatHachBangLaiXe\Images\" + myValue + ".JPG";
@@ -107,8 +81,8 @@ namespace SatHachBangLaiXe
         }
         private void setdethi()
         {
-            DeThi dethi = new DeThi();
-            this.dethi = dethi.getDethi();
+            OnTap ontap = new OnTap();
+            this.ontap = ontap.getOnTap();
         }
 
         public string QuestionID;
@@ -121,24 +95,23 @@ namespace SatHachBangLaiXe
         }
         private void QuestionGroupBox_Click(object sender, EventArgs e)
         {
-            var questionID = ((FrmThi)sender).QuestionID;
+            var questionID = ((FrmOnTap)sender).QuestionID;
             loadcauhoi(this.CauDangLam);
         }
-
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
         }
-        private void FrmThi_Load(object sender, EventArgs e)
+        private void FrmOnTap_Load(object sender, EventArgs e)
         {
             droptable();
             this.CauDaLam = 0;
-            if (dethi == null) setdethi();
+            if (ontap == null) setdethi();
             Screen scr = Screen.PrimaryScreen; //đi lấy màn hình chính
             this.Left = (scr.WorkingArea.Width - this.Width) / 2;
             this.Top = (scr.WorkingArea.Height - this.Height) / 2;
             int i = 0;
-            foreach (DataRow row in this.dethi.Rows)
+            foreach (DataRow row in this.ontap.Rows)
             {
                 String myValue = row["SoDA"].ToString();
                 String msch = row["MaCH"].ToString();
@@ -149,59 +122,14 @@ namespace SatHachBangLaiXe
             }
             loadcauhoi(this.CauDangLam);
             listptl[CauDangLam].setBackColorCDL();
-            
+
             txt = lbSatHachBangLai.Text;
             len = txt.Length;
             lbSatHachBangLai.Text = "";
             timer1.Start();
             this.timer2.Start();
-
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-
-        int counter = 0;
-        int len = 0;
-        string txt;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            counter++;
-            if (counter > len)
-            {
-                counter = 0;
-                lbSatHachBangLai.Text = "";
-            }
-            else
-            {
-                lbSatHachBangLai.Text = txt.Substring(0, counter);
-                if(lbSatHachBangLai.ForeColor==Color.OrangeRed)
-                {
-                    lbSatHachBangLai.ForeColor = Color.Black;
-                    lbSatHachBangLai.ForeColor = Color.White;
-                    lbSatHachBangLai.ForeColor = Color.Blue;
-                    lbSatHachBangLai.ForeColor = Color.Orange;
-                    lbSatHachBangLai.ForeColor = Color.Brown;
-                }
-                else { lbSatHachBangLai.ForeColor = Color.OrangeRed; }
-            }
-        }
-        private int socaudung()
-        {
-            SqlConnection connDB = new SqlConnection(Program.connStr);
-            connDB.Open();
-            String sqlcmd = "";
-            sqlcmd = "print dbo.Check_Dap_An()";
-            int a = int.Parse(sqlcmd);
-            SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
-            try { sqlCmd.ExecuteNonQuery(); }
-            catch { }           
-            connDB.Close();
-            return a;
-        }
         private void thubai()
         {
             SqlConnection connDB = new SqlConnection(Program.connStr);
@@ -212,14 +140,13 @@ namespace SatHachBangLaiXe
             {
                 string MsCauHoi = listptl[i].getMsCH();
                 string DapAnofTS = listptl[i].getDapAnTS();
-                sqlcmd = "insert into DAPAN values (" + k +",'"+ MsCauHoi + "','" + DapAnofTS + "');";
+                sqlcmd = "insert into DAPAN values (" + k + ",'" + MsCauHoi + "','" + DapAnofTS + "');";
                 k++;
                 SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
                 try { sqlCmd.ExecuteNonQuery(); }
                 catch { }
             }
             connDB.Close();
-            themTTBAITHI();
         }
         private void droptable()
         {
@@ -232,53 +159,14 @@ namespace SatHachBangLaiXe
             catch { }
             connDB.Close();
         }
-        private void themTTBAITHI()
+        private void btnThoat1_Click(object sender, EventArgs e)
         {
-
-            SqlConnection connDB = new SqlConnection(Program.connStr);
-            connDB.Open();
-            String sqlcmd = "";
-            sqlcmd = "Insert into TTBaiThi (STT, MaDeThi ,MaHV ,DapAnTS) SELECT STT , '" + Properties.Settings.Default.madethi + "' , '" + Properties.Settings.Default.mahocvien + "' , DapAnofTS FROM DAPAN ";
-            SqlCommand sqlCmd = new SqlCommand(sqlcmd, connDB);
-            try
-            {
-                sqlCmd.ExecuteNonQuery();
-                Console.WriteLine("Gia tri cuamadethi la:  " + Properties.Settings.Default.madethi);
-
-            }
-            catch
-            { }
-            connDB.Close();
-        }
-        private void FrmThi_KeyUp(object sender, KeyEventArgs e)
-        {
+            Application.Exit();
 
         }
-        private void pn_DeThi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmThi_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void pn_DeThi_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            this.metroProgressBar1.Increment(1);
-
-        }
-
-        private void btnChamDiem_Click(object sender, EventArgs e)
-        {
-
-        }
+        int counter = 0;
+        int len = 0;
+        string txt;
 
         private void btnChamDiem1_Click(object sender, EventArgs e)
         {
@@ -289,15 +177,43 @@ namespace SatHachBangLaiXe
                 frm.ShowDialog();
             }
         }
-        //private int exec()
-        //{
-        //    String query = "print dbo.Check_Dap_An()";
-        //    return DAL.ConnectDB.ExecuteNonQuery(query);
-        //}
-        private void btnThoat1_Click(object sender, EventArgs e)
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            counter++;
+            if (counter > len)
+            {
+                counter = 0;
+                lbSatHachBangLai.Text = "";
+            }
+            else
+            {
+                lbSatHachBangLai.Text = txt.Substring(0, counter);
+                if (lbSatHachBangLai.ForeColor == Color.OrangeRed)
+                {
+                    lbSatHachBangLai.ForeColor = Color.Black;
+                    lbSatHachBangLai.ForeColor = Color.White;
+                    lbSatHachBangLai.ForeColor = Color.Blue;
+                    lbSatHachBangLai.ForeColor = Color.Orange;
+                    lbSatHachBangLai.ForeColor = Color.Brown;
+                    lbSatHachBangLai.ForeColor = Color.Green;
+                    lbSatHachBangLai.ForeColor = Color.Honeydew;
+
+
+                }
+                else { lbSatHachBangLai.ForeColor = Color.OrangeRed; }
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.metroProgressBar1.Increment(1);
+
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
     }
-
 }

@@ -1,4 +1,6 @@
-select TTCauHoi.MaCH ,TTCauHoi.SoDA ,TTCauHoi.DapAn from  TTCauHoi inner join TTDeThiCauHoi on TTCauHoi.MaCH = TTDeThiCauHoi.MaCH  where TTDeThiCauHoi.MaDeThi =   (select TOP(1) TTDeThi.MaDeThi
+select TTCauHoi.MaCH ,TTCauHoi.SoDA ,TTCauHoi.DapAn from  
+TTCauHoi inner join TTDeThiCauHoi on TTCauHoi.MaCH = TTDeThiCauHoi.MaCH  
+where TTDeThiCauHoi.MaDeThi =   (select TOP(1) TTDeThi.MaDeThi
 from TTHocVien  inner join TTDeThi 
 on     TTHocVien.KyThi= TTDeThi.KyThi
 inner join TTDeThiCauHoi 
@@ -47,4 +49,9 @@ SELECT STT, MaCH,DapAn FROM TTCauHoi O INNER JOIN DAPAN C ON C.MsCauHoi = O.MaCH
 
 
 
-Insert into TTBaiThi (STT, MaDeThi ,MaHV ,DapAnTS) SELECT STT , 'KT01001' ,'KT01001' , DapAnofTS FROM DAPAN 
+Insert into TTBaiThi (STT, MaDeThi ,MaHV ,DapAnTS)	SELECT STT , 'KT01001' ,'KT01001' , DapAnofTS FROM DAPAN 
+
+Insert into TTBaiThi (STT, MaDeThi ,MaHV ,DapAnTS) SELECT STT , 'KT01001' , +(select distinct MaDeThi from TTBaiThi where MaHV = 'KT01001')  , DapAnofTS FROM DAPAN 
+
+	delete from TTBaiThi
+select distinct MaDeThi from TTBaiThi where MaHV = 'KT01001'

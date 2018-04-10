@@ -33,13 +33,11 @@
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.btnMetroInfoAccount = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.metroTile12 = new MetroFramework.Controls.MetroTile();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTile14 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroTile1
@@ -120,44 +118,6 @@
             this.metroTile5.UseTileImage = true;
             this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
-            // metroTile12
-            // 
-            this.metroTile12.ActiveControl = null;
-            this.metroTile12.BackColor = System.Drawing.Color.IndianRed;
-            this.metroTile12.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.metroTile12.Location = new System.Drawing.Point(520, 232);
-            this.metroTile12.Name = "metroTile12";
-            this.metroTile12.Size = new System.Drawing.Size(147, 91);
-            this.metroTile12.TabIndex = 11;
-            this.metroTile12.Text = "Thêm Tài Khoản";
-            this.metroTile12.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile12.TileImage")));
-            this.metroTile12.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.metroTile12.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile12.UseCustomBackColor = true;
-            this.metroTile12.UseCustomForeColor = true;
-            this.metroTile12.UseMnemonic = false;
-            this.metroTile12.UseSelectable = true;
-            this.metroTile12.UseTileImage = true;
-            // 
-            // metroTile6
-            // 
-            this.metroTile6.ActiveControl = null;
-            this.metroTile6.BackColor = System.Drawing.Color.Salmon;
-            this.metroTile6.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.metroTile6.Location = new System.Drawing.Point(364, 332);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(147, 98);
-            this.metroTile6.TabIndex = 12;
-            this.metroTile6.Text = "Sửa Tài Khoản";
-            this.metroTile6.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile6.TileImage")));
-            this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.metroTile6.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile6.UseCustomBackColor = true;
-            this.metroTile6.UseCustomForeColor = true;
-            this.metroTile6.UseMnemonic = false;
-            this.metroTile6.UseSelectable = true;
-            this.metroTile6.UseTileImage = true;
-            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
@@ -193,9 +153,9 @@
             this.metroTile14.ActiveControl = null;
             this.metroTile14.BackColor = System.Drawing.Color.Tan;
             this.metroTile14.ForeColor = System.Drawing.Color.Ivory;
-            this.metroTile14.Location = new System.Drawing.Point(520, 332);
+            this.metroTile14.Location = new System.Drawing.Point(364, 343);
             this.metroTile14.Name = "metroTile14";
-            this.metroTile14.Size = new System.Drawing.Size(147, 98);
+            this.metroTile14.Size = new System.Drawing.Size(303, 87);
             this.metroTile14.TabIndex = 10;
             this.metroTile14.Text = "Đăng Xuất";
             this.metroTile14.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile14.TileImage")));
@@ -207,35 +167,35 @@
             this.metroTile14.UseSelectable = true;
             this.metroTile14.UseTileImage = true;
             // 
-            // metroTile4
+            // metroTile3
             // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.BackColor = System.Drawing.Color.Gray;
-            this.metroTile4.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.metroTile4.Location = new System.Drawing.Point(364, 232);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(147, 91);
-            this.metroTile4.TabIndex = 13;
-            this.metroTile4.Text = "Đổi Mật Khẩu";
-            this.metroTile4.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile4.TileImage")));
-            this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile4.UseCustomBackColor = true;
-            this.metroTile4.UseCustomForeColor = true;
-            this.metroTile4.UseMnemonic = false;
-            this.metroTile4.UseSelectable = true;
-            this.metroTile4.UseTileImage = true;
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.BackColor = System.Drawing.Color.Salmon;
+            this.metroTile3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.metroTile3.Location = new System.Drawing.Point(364, 232);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(303, 105);
+            this.metroTile3.TabIndex = 12;
+            this.metroTile3.Text = "Ôn Luyện Thi";
+            this.metroTile3.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile3.TileImage")));
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.metroTile3.UseCustomBackColor = true;
+            this.metroTile3.UseCustomForeColor = true;
+            this.metroTile3.UseMnemonic = false;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click_1);
             // 
             // NavigateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 453);
+            this.ClientSize = new System.Drawing.Size(701, 463);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.metroTile4);
-            this.Controls.Add(this.metroTile6);
-            this.Controls.Add(this.metroTile12);
+            this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile14);
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.btnMetroInfoAccount);
@@ -258,12 +218,10 @@
         public MetroFramework.Controls.MetroTile metroTile2;
         public MetroFramework.Controls.MetroTile btnMetroInfoAccount;
         public MetroFramework.Controls.MetroTile metroTile5;
-        public MetroFramework.Controls.MetroTile metroTile12;
-        public MetroFramework.Controls.MetroTile metroTile6;
         public MetroFramework.Controls.MetroLabel metroLabel1;
         public MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton metroButton1;
         public MetroFramework.Controls.MetroTile metroTile14;
-        public MetroFramework.Controls.MetroTile metroTile4;
+        public MetroFramework.Controls.MetroTile metroTile3;
     }
 }

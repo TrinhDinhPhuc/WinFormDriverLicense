@@ -90,5 +90,14 @@ namespace SatHachBangLaiXe
         {
 
         }
+
+        private void metroTile3_Click_1(object sender, EventArgs e)
+        {
+            using (FrmOnTap frm = new FrmOnTap())
+            {
+                frm.ShowDialog();
+            }
+
+        }
     }
 }
