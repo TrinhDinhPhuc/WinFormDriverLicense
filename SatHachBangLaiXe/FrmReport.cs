@@ -33,9 +33,9 @@ namespace SatHachBangLaiXe
             DataTable dt = new DataTable();
             da.Fill(dt);
             con.Close();
-            XtraReport1 report = new XtraReport1();
-            report.DataSource = dt;
-            report.ShowPreviewDialog();
+            //XtraReport1 report = new XtraReport1();
+            //report.DataSource = dt;
+            //report.ShowPreviewDialog();
         }
     }
 }

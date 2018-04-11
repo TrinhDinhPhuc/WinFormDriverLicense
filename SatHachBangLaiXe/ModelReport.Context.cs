@@ -13,10 +13,10 @@ namespace SatHachBangLaiXe
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SATHACHLAIXEEntities : DbContext
+    public partial class SATHACHLAIXEEntities1 : DbContext
     {
-        public SATHACHLAIXEEntities()
-            : base("name=SATHACHLAIXEEntities")
+        public SATHACHLAIXEEntities1()
+            : base("name=SATHACHLAIXEEntities1")
         {
         }
     

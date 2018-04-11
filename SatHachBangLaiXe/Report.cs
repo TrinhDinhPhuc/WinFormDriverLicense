@@ -15,10 +15,8 @@ namespace SatHachBangLaiXe
     public partial class Report
     {
         public string MaHV { get; set; }
-        public string TenHV { get; set; }
-        public string HoHV { get; set; }
-        public string MaCH { get; set; }
+        public string MaDeThi { get; set; }
+        public int STT { get; set; }
         public string DapAnTS { get; set; }
-        public string DapAn { get; set; }
     }
 }
