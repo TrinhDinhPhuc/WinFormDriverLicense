@@ -178,6 +178,51 @@
     <Compile Include="LogInThiSinh.Designer.cs">
       <DependentUpon>LogInThiSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model5.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model5.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model5.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model5.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelReport.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelReport.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelReport.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelReport.edmx</DependentUpon>
+    </Compile>
     <Compile Include="NavigateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +241,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionGroupBox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report.cs">
+      <DependentUpon>ModelReport.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports2.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports3.cs">
+      <DependentUpon>Model5.tt</DependentUpon>
     </Compile>
     <Compile Include="SATHACHBANGLAI1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -236,6 +290,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SATHACHLAIXEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport123.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport123.Designer.cs">
+      <DependentUpon>XtraReport123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport222.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport222.Designer.cs">
+      <DependentUpon>XtraReport222.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport333.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport333.Designer.cs">
+      <DependentUpon>XtraReport333.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
@@ -289,6 +361,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="XtraReport123.resx">
+      <DependentUpon>XtraReport123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport222.resx">
+      <DependentUpon>XtraReport222.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport333.resx">
+      <DependentUpon>XtraReport333.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DAPANSAIDataSet.xsc">
       <DependentUpon>DAPANSAIDataSet.xsd</DependentUpon>
     </None>
@@ -299,6 +380,27 @@
     </None>
     <None Include="DAPANSAIDataSet.xss">
       <DependentUpon>DAPANSAIDataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelReport.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelReport.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model5.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model5.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model5.edmx.diagram">
+      <DependentUpon>Model5.edmx</DependentUpon>
+    </None>
+    <None Include="ModelReport.edmx.diagram">
+      <DependentUpon>ModelReport.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Candidate.datasource" />
@@ -413,6 +515,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model5.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model5.edmx</DependentUpon>
+      <LastGenOutput>Model5.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model5.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model5.edmx</DependentUpon>
+      <LastGenOutput>Model5.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelReport.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelReport.edmx</DependentUpon>
+      <LastGenOutput>ModelReport.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelReport.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelReport.edmx</DependentUpon>
+      <LastGenOutput>ModelReport.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
