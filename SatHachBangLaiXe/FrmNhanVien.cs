@@ -74,7 +74,8 @@ namespace SatHachBangLaiXe
             objState = EntityState.Added;
             pic.Image = null;
             nhanVienBindingSource.Add(new DTO.NhanVien());
-            nhanVienBindingSource.MoveLast();
+            nhanVienBindingSource.MoveLast();  //Use the Move methods to move from record to record without applying a condition.
+
             txtTaikhoan.Focus();
         }
 

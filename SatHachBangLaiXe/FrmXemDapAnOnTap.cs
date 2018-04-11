@@ -28,6 +28,8 @@ namespace SatHachBangLaiXe
 
             lbCauDung.Text = "" + count1;
             lbCauSai.Text = "" + count2;
+            lbDiem.Text = "Số Điểm Của Bạn Là: " + count1 + "/30 Câu";
+
         }
 
         private void btnThoatThongKe_Click(object sender, EventArgs e)

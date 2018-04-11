@@ -63,6 +63,7 @@
             this.lbCauSai = new MetroFramework.Controls.MetroLabel();
             this.xem_Dap_An_SaiTableAdapter1 = new SatHachBangLaiXe.DAPANSAIDataSetTableAdapters.Xem_Dap_An_SaiTableAdapter();
             this.xem_Dap_An_DungTableAdapter = new SatHachBangLaiXe.SATHACHLAIXEDataSetTableAdapters.Xem_Dap_An_DungTableAdapter();
+            this.lbDiem = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xemDapAnBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sATHACHBANGLAI1DataSet1)).BeginInit();
@@ -112,7 +113,7 @@
             this.metroGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.metroGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -140,7 +141,7 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(23, 81);
+            this.metroGrid1.Location = new System.Drawing.Point(23, 121);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -218,7 +219,7 @@
             this.metroGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.metroGrid2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.metroGrid2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroGrid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -246,7 +247,7 @@
             this.metroGrid2.EnableHeadersVisualStyles = false;
             this.metroGrid2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid2.Location = new System.Drawing.Point(428, 81);
+            this.metroGrid2.Location = new System.Drawing.Point(428, 121);
             this.metroGrid2.Name = "metroGrid2";
             this.metroGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -297,7 +298,7 @@
             // 
             this.metroLink1.FontSize = MetroFramework.MetroLinkSize.Medium;
             this.metroLink1.ForeColor = System.Drawing.Color.Teal;
-            this.metroLink1.Location = new System.Drawing.Point(440, 52);
+            this.metroLink1.Location = new System.Drawing.Point(440, 92);
             this.metroLink1.Name = "metroLink1";
             this.metroLink1.Size = new System.Drawing.Size(122, 23);
             this.metroLink1.TabIndex = 3;
@@ -309,7 +310,7 @@
             // 
             this.metroLink2.FontSize = MetroFramework.MetroLinkSize.Medium;
             this.metroLink2.ForeColor = System.Drawing.Color.Teal;
-            this.metroLink2.Location = new System.Drawing.Point(39, 48);
+            this.metroLink2.Location = new System.Drawing.Point(39, 88);
             this.metroLink2.Name = "metroLink2";
             this.metroLink2.Size = new System.Drawing.Size(122, 23);
             this.metroLink2.TabIndex = 3;
@@ -320,7 +321,7 @@
             // lbCauDung
             // 
             this.lbCauDung.AutoSize = true;
-            this.lbCauDung.Location = new System.Drawing.Point(157, 48);
+            this.lbCauDung.Location = new System.Drawing.Point(157, 88);
             this.lbCauDung.Name = "lbCauDung";
             this.lbCauDung.Size = new System.Drawing.Size(45, 19);
             this.lbCauDung.TabIndex = 4;
@@ -329,7 +330,7 @@
             // lbCauSai
             // 
             this.lbCauSai.AutoSize = true;
-            this.lbCauSai.Location = new System.Drawing.Point(556, 52);
+            this.lbCauSai.Location = new System.Drawing.Point(556, 92);
             this.lbCauSai.Name = "lbCauSai";
             this.lbCauSai.Size = new System.Drawing.Size(45, 19);
             this.lbCauSai.TabIndex = 4;
@@ -343,11 +344,25 @@
             // 
             this.xem_Dap_An_DungTableAdapter.ClearBeforeFill = true;
             // 
+            // lbDiem
+            // 
+            this.lbDiem.AutoSize = true;
+            this.lbDiem.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbDiem.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lbDiem.ForeColor = System.Drawing.Color.Red;
+            this.lbDiem.Location = new System.Drawing.Point(300, 42);
+            this.lbDiem.Name = "lbDiem";
+            this.lbDiem.Size = new System.Drawing.Size(118, 25);
+            this.lbDiem.TabIndex = 5;
+            this.lbDiem.Text = "metroLabel1";
+            this.lbDiem.UseCustomForeColor = true;
+            // 
             // FrmXemDapAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 454);
+            this.ClientSize = new System.Drawing.Size(813, 495);
+            this.Controls.Add(this.lbDiem);
             this.Controls.Add(this.lbCauSai);
             this.Controls.Add(this.lbCauDung);
             this.Controls.Add(this.metroLink2);
@@ -406,5 +421,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sTTDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn maCHDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dapAnDataGridViewTextBoxColumn1;
+        private MetroFramework.Controls.MetroLabel lbDiem;
     }
 }

@@ -49,13 +49,18 @@ namespace SatHachBangLaiXe
                     UserThiSinh obj = db.Query<UserThiSinh>($"select * from TTHocVien where SoCMND ='{txtTenTaiKhoan.Text}'", commandType: CommandType.Text).SingleOrDefault();
                     string mahocvien = obj.MaHV;
                     Properties.Settings.Default.mahocvien = mahocvien;
+                    Properties.Settings.Default.KMaHV = mahocvien;
+                    Properties.Settings.Default.KTenHV = obj.TenHV;
+                    Properties.Settings.Default.KHoHV = obj.HoHV;
+                    Properties.Settings.Default.KSoCMND = obj.SoCMND;
+                    Properties.Settings.Default.KKyThi = obj.KyThi;
                     if (obj != null)
                     {
                         if (obj.MaHV == txtMatKhau.Text)//True
                         {
-                            Console.WriteLine("\n\n Gia tri cua mahocvien la:  " + Properties.Settings.Default.mahocvien);
+                            Console.WriteLine("\n\n Gia tri cua mahocvien la:  " + Properties.Settings.Default.KHoHV);
 
-                            using (FrmThi frm = new FrmThi())//Open main form and hide login form
+                            using (NavigateForm frm = new NavigateForm())//Open main form and hide login form
                             {
                                 this.Hide();
                                 frm.ShowDialog();

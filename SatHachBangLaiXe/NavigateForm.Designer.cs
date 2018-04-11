@@ -58,6 +58,7 @@
             this.metroTile1.UseMnemonic = false;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroTile2
             // 
@@ -77,6 +78,7 @@
             this.metroTile2.UseMnemonic = false;
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // btnMetroInfoAccount
             // 
@@ -107,7 +109,7 @@
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(300, 198);
             this.metroTile5.TabIndex = 4;
-            this.metroTile5.Text = "Đăng Nhập Thi Lái Xe";
+            this.metroTile5.Text = "Thi Lái Xe";
             this.metroTile5.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile5.TileImage")));
             this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
@@ -166,6 +168,7 @@
             this.metroTile14.UseMnemonic = false;
             this.metroTile14.UseSelectable = true;
             this.metroTile14.UseTileImage = true;
+            this.metroTile14.Click += new System.EventHandler(this.metroTile14_Click);
             // 
             // metroTile3
             // 
@@ -202,6 +205,7 @@
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "NavigateForm";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Phần Mềm Thi Sát Hạch Bằng Lái Xe";

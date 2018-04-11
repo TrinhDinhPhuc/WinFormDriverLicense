@@ -57,12 +57,11 @@ namespace SatHachBangLaiXe
                     {
                         if (obj.MatKhau == txtPassword.Text)//True
                         {
-                            using (NavigateForm frm = new NavigateForm())//Open main form and hide login form
+                            
+                            using (NavigateFormQuanLy frm = new NavigateFormQuanLy())//Open main form and hide login form
                             {
                                 this.Hide();
                                 frm.ShowDialog();
-
-
                             }
                         }
                         else

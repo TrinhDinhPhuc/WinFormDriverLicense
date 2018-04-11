@@ -124,7 +124,7 @@ exec sp_HocVien_Update 'KT01004','LALA1','LALA1','1996-10-15','256858748','2012-
 
 
 -------------------------------------------------------------------------------------
-alter proc	
+alter proc	sp_KyThi_Insert
 (
 @KyThi varchar(10) output,
 @NgayBatDauDK varchar(30),

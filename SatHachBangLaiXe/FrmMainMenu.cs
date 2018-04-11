@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,27 +18,42 @@ namespace SatHachBangLaiXe
             InitializeComponent();
         }
 
-        private void FrmMainMenu_Load(object sender, EventArgs e)
+        private void metroButton1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void metroTile1_Click(object sender, EventArgs e)
+        private void metroTile7_Click(object sender, EventArgs e)
         {
-            using (NavigateForm frm = new NavigateForm())//Open main form and hide login form
+            using (Login frm = new Login())
             {
-                this.Hide();
                 frm.ShowDialog();
             }
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
+        private void metroTile8_Click(object sender, EventArgs e)
         {
-            using (NavigateFormQuanLy frm = new NavigateFormQuanLy())//Open main form and hide login form
+            MetroFramework.MetroMessageBox.Show(this, "Vui lòng mở file Word để xem hướng dẫn! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int milliseconds = 2000;
+            Thread.Sleep(milliseconds);
+            System.Diagnostics.Process.Start(@"C:\Users\USER\Documents\Visual Studio 2015\Projects\SatHachBangLaiXe\SatHachBangLaiXe\Files\QuyDinhVeDaoTaoSatHachCapGPLXCoGioiDuongBo.pdf");
+
+        }
+
+        private void metroTile6_Click(object sender, EventArgs e)
+        {
+            using (LogInThiSinh frm = new LogInThiSinh())
             {
-                this.Hide();
                 frm.ShowDialog();
             }
         }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "PHẦN MỀM LÀ BẢN QUYỀN CỦA NHÓM 5! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int milliseconds = 2000;
+            Thread.Sleep(milliseconds);
+        }
+
     }
 }

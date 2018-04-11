@@ -93,5 +93,77 @@ namespace SatHachBangLaiXe.Properties {
                 this["madethi"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KDiaChi {
+            get {
+                return ((string)(this["KDiaChi"]));
+            }
+            set {
+                this["KDiaChi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KMaHV {
+            get {
+                return ((string)(this["KMaHV"]));
+            }
+            set {
+                this["KMaHV"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KSoCMND {
+            get {
+                return ((string)(this["KSoCMND"]));
+            }
+            set {
+                this["KSoCMND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KKyThi {
+            get {
+                return ((string)(this["KKyThi"]));
+            }
+            set {
+                this["KKyThi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KHoHV {
+            get {
+                return ((string)(this["KHoHV"]));
+            }
+            set {
+                this["KHoHV"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KTenHV {
+            get {
+                return ((string)(this["KTenHV"]));
+            }
+            set {
+                this["KTenHV"] = value;
+            }
+        }
     }
 }

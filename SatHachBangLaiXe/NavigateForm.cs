@@ -1,10 +1,13 @@
-﻿using System;
+﻿using DevExpress.Utils.OAuth.Provider;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -29,7 +32,7 @@ namespace SatHachBangLaiXe
 
         private void btnMetroInfoAccount_Click(object sender, EventArgs e)
         {
-            using (FrmThiSinh frm = new FrmThiSinh())//Open main form and hide login form
+            using (FrmThongTinHV frm = new FrmThongTinHV())//Open main form and hide login form
             {
                 frm.ShowDialog();
             }
@@ -37,7 +40,7 @@ namespace SatHachBangLaiXe
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
-            using (LogInThiSinh frm = new LogInThiSinh())//Open main form and hide login form
+            using (FrmThi frm = new FrmThi())//Open main form and hide login form
             {
                 this.Hide();
                 frm.ShowDialog();
@@ -97,6 +100,27 @@ namespace SatHachBangLaiXe
             {
                 frm.ShowDialog();
             }
+
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Bạn có thể dùng mẫu phúc khảo của chúng tôi, điền đầy đủ thông tin và gửi cho cán bộ coi thi! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int milliseconds = 2000;
+            Thread.Sleep(milliseconds);
+            System.Diagnostics.Process.Start(@"C:\Users\USER\Documents\Visual Studio 2015\Projects\SatHachBangLaiXe\SatHachBangLaiXe\Files\don-xin-cham-phuc-khao-bai-thi1.doc");
+
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\USER\Documents\Visual Studio 2015\Projects\SatHachBangLaiXe\SatHachBangLaiXe\Files\QuyDinhVeDaoTaoSatHachCapGPLXCoGioiDuongBo.pdf");
+
+        }
+
+        private void metroTile14_Click(object sender, EventArgs e)
+        {
+            this.Close();
 
         }
     }
