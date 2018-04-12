@@ -55,5 +55,34 @@ namespace SatHachBangLaiXe
             Thread.Sleep(milliseconds);
         }
 
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Đang Cập Nhật! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Vui lòng ghé thăm facebook.com/KPP! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Vui lòng ghé thăm twitter.com/KPP! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Vui lòng ghé thăm youtube.com/KPP! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(this, "Vui lòng ghé thăm google.com/KPP! \n Xin cảm ơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 }

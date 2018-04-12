@@ -44,7 +44,7 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(55, 80);
+            this.metroTile1.Location = new System.Drawing.Point(39, 79);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(472, 260);
             this.metroTile1.TabIndex = 0;
@@ -53,12 +53,13 @@
             this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
             this.metroTile2.BackColor = System.Drawing.Color.AliceBlue;
-            this.metroTile2.Location = new System.Drawing.Point(53, 346);
+            this.metroTile2.Location = new System.Drawing.Point(37, 345);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(111, 97);
             this.metroTile2.TabIndex = 1;
@@ -69,12 +70,13 @@
             this.metroTile2.UseCustomForeColor = true;
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
             this.metroTile3.BackColor = System.Drawing.Color.AliceBlue;
-            this.metroTile3.Location = new System.Drawing.Point(180, 346);
+            this.metroTile3.Location = new System.Drawing.Point(164, 345);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(106, 97);
             this.metroTile3.TabIndex = 1;
@@ -85,12 +87,13 @@
             this.metroTile3.UseCustomForeColor = true;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
             this.metroTile4.BackColor = System.Drawing.Color.AliceBlue;
-            this.metroTile4.Location = new System.Drawing.Point(297, 346);
+            this.metroTile4.Location = new System.Drawing.Point(281, 345);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(110, 97);
             this.metroTile4.TabIndex = 1;
@@ -101,12 +104,13 @@
             this.metroTile4.UseCustomForeColor = true;
             this.metroTile4.UseSelectable = true;
             this.metroTile4.UseTileImage = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
             this.metroTile5.BackColor = System.Drawing.Color.AliceBlue;
-            this.metroTile5.Location = new System.Drawing.Point(418, 346);
+            this.metroTile5.Location = new System.Drawing.Point(402, 345);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(109, 97);
             this.metroTile5.TabIndex = 1;
@@ -117,6 +121,7 @@
             this.metroTile5.UseCustomForeColor = true;
             this.metroTile5.UseSelectable = true;
             this.metroTile5.UseTileImage = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
             // metroTile6
             // 

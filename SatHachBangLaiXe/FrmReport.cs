@@ -44,7 +44,7 @@ namespace SatHachBangLaiXe
                 report.DataSource = dt;
                 report.ShowPreviewDialog();
             }
-
+            this.Close();
         
     }
 
@@ -68,6 +68,8 @@ namespace SatHachBangLaiXe
                 report.DataSource = dt;
                 report.ShowPreviewDialog();
             }
+            this.Close();
+
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
