@@ -166,7 +166,7 @@ namespace SatHachBangLaiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 352);
+            this.ClientSize = new System.Drawing.Size(638, 352);
             this.Controls.Add(this.metroTile15);
             this.Controls.Add(this.metroTile9);
             this.Controls.Add(this.metroTile10);

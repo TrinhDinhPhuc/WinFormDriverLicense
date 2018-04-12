@@ -26,32 +26,53 @@ namespace SatHachBangLaiXe
 
         private void btnXuatReport_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(txtMaThiSinh.Text))
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Không được để trống!!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            SqlConnection con = new SqlConnection(Program.connStr);
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select * from Reports2 ", con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            XtraReport222 report = new XtraReport222();
-            report.DataSource = dt;
-            report.ShowPreviewDialog();
+            }
+            else
+            {
+                SqlConnection con = new SqlConnection(Program.connStr);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("select * from Reports2 ", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+                XtraReport222 report = new XtraReport222();
+                report.DataSource = dt;
+                report.ShowPreviewDialog();
+            }
+
         
     }
 
         private void metroButton22_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Program.connStr);
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select * from Reports3 ", con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            XtraReport333 report = new XtraReport333();
-            report.DataSource = dt;
-            report.ShowPreviewDialog();
+            if (String.IsNullOrWhiteSpace(metroButton22.Text))
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Không được để trống!!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            {
+                SqlConnection con = new SqlConnection(Program.connStr);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("select * from Reports3 ", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+                XtraReport333 report = new XtraReport333();
+                report.DataSource = dt;
+                report.ShowPreviewDialog();
+            }
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

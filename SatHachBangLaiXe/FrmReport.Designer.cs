@@ -34,6 +34,7 @@
             this.metroButton22 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // btnXuatReport
@@ -100,11 +101,22 @@
             this.metroLabel2.TabIndex = 2;
             this.metroLabel2.Text = "Kỳ Thi";
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(626, 5);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(80, 30);
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.Text = "Thoát";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // FrmReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 233);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTextBox1);
@@ -129,5 +141,6 @@
         private MetroFramework.Controls.MetroButton metroButton22;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
