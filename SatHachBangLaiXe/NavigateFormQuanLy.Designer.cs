@@ -67,7 +67,7 @@ namespace SatHachBangLaiXe
             this.metroTile9.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
             this.metroTile9.Location = new System.Drawing.Point(204, 203);
             this.metroTile9.Name = "metroTile9";
-            this.metroTile9.Size = new System.Drawing.Size(184, 124);
+            this.metroTile9.Size = new System.Drawing.Size(185, 124);
             this.metroTile9.TabIndex = 25;
             this.metroTile9.Text = "Xem Danh Sách Thí Sinh";
             this.metroTile9.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile9.TileImage")));
